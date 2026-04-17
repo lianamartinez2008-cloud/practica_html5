@@ -1,3 +1,4 @@
+
 body{
     margin:0;
     font-family: Arial;
@@ -20,10 +21,20 @@ body{
     text-decoration:none;
 }
 
+.nav a:hover{
+    color:#38bdf8;
+}
+
 /* SECCIONES */
 .section{
-    padding:20px;
+    padding:30px;
     text-align:center;
+}
+
+.section p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.6;
 }
 
 .section img{
@@ -36,11 +47,17 @@ body{
     display:flex;
     justify-content:center;
     gap:15px;
+    flex-wrap:wrap;
 }
 
 .galeria img{
     width:200px;
     border-radius:10px;
+    transition:0.3s;
+}
+
+.galeria img:hover{
+    transform:scale(1.05);
 }
 
 /* FOOTER */
